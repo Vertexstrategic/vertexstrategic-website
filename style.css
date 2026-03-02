@@ -1,0 +1,70 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f1720;
+    color: #ffffff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.logo img {
+    height: 90px;
+}
+
+nav a {
+    color: #d4af37;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+.hero {
+    padding: 60px 40px;
+}
+
+.hero h1 {
+    font-size: 42px;
+}
+
+.btn {
+    background: #d4af37;
+    color: #0f1720;
+    padding: 12px 24px;
+    text-decoration: none;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.whatsapp {
+    background: #25D366;
+    color: #ffffff;
+}
+
+.contact {
+    padding: 40px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    background: #0f1720;
+    border: 1px solid #d4af37;
+    color: #ffffff;
+}
+
+button {
+    background: #d4af37;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+}
