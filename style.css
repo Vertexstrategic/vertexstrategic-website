@@ -1,15 +1,15 @@
 
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #0f1720;
+    background-color: #0f1720;
     color: #ffffff;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
 }
 
 header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     padding: 20px 40px;
 }
 
@@ -19,52 +19,62 @@ header {
 
 nav a {
     color: #d4af37;
-    margin-left: 20px;
     text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
 }
 
 nav a:hover {
     color: #ffffff;
 }
 
-.hero {
-    padding: 60px 40px;
-}
-
-.hero h1 {
-    font-size: 42px;
-}
-
-.btn {
-    background: #d4af37;
+button, .btn {
+    background-color: #d4af37;
     color: #0f1720;
+    border: none;
     padding: 12px 24px;
-    text-decoration: none;
-    margin-right: 10px;
-    display: inline-block;
+    font-weight: 600;
+    cursor: pointer;
 }
 
-.whatsapp {
-    background: #25D366;
-    color: #ffffff;
+button:hover, .btn:hover {
+    background-color: #ffffff;
 }
 
-.contact {
-    padding: 40px;
+footer {
+    border-top: 1px solid rgba(255,255,255,0.15);
+    padding: 20px 40px;
+    color: #d4af37;
 }
 
 input, textarea {
     width: 100%;
     padding: 10px;
-    margin-bottom: 15px;
-    background: #0f1720;
+    margin-top: 10px;
+    margin-bottom: 20px;
     border: 1px solid #d4af37;
+    background-color: #0f1720;
     color: #ffffff;
 }
 
-button {
-    background: #d4af37;
-    border: none;
-    padding: 12px 24px;
-    cursor: pointer;
+
+/* Contact form status */
+.form-success, .form-error{
+    margin: 16px 0;
+    padding: 14px 16px;
+    border-radius: 10px;
+    border: 1px solid rgba(212,175,55,0.35);
+    background: rgba(15,23,32,0.65);
+    color: #ffffff;
+    max-width: 900px;
+}
+.form-success strong{
+    color: #d4af37;
+}
+.form-error{
+    border-color: rgba(255,99,99,0.45);
+}
+.form-error a{
+    color: #d4af37;
+    text-decoration: underline;
 }

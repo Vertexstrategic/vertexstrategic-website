@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kontakt | VERTEX Strategic Projects</title>
+  <meta name="description" content="Kontaktformular und Kontaktdaten.">
+  <link rel="canonical" href="https://vertexstrategic.org/contact_en.html">
+  <link rel="stylesheet" href="style.css">
+  <meta name="theme-color" content="#0b0f14">
+</head>
+<body>
+
+<div class="header">
+  <div class="header-inner">
+    <div class="brand">
+      <div class="logo" aria-hidden="true"><img src="vertex_logo.png" alt="VERTEX Strategic Projects Logo"></div>
+      <div class="brand-text">
+        <strong>VERTEX Strategic Projects</strong>
+        <span>Strategy • Coordination • Procurement • Administrative Services</span>
+      </div>
+    </div>
+    <div class="nav" role="navigation" aria-label="Primary">
+      <a class="" href="index_en.html">Home</a>
+      <a class="" href="services_en.html">Services</a>
+      <a class="active" href="contact_en.html">Contact</a>
+      <a class="" href="impressum_en.html">Imprint</a>
+      <div class="lang" aria-label="Language">
+        <a class="" href="contact.html">DE</a><a class="active" href="contact_en.html">EN</a><a class="" href="contact_sq.html">SQ</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <p class="kicker">Premium project & procurement coordination</p>
+  <h1 class="h1">Contact & project request</h1>
+  <div class="grid">
+    
+<div class="card panel">
+  <h3>Contact & project request</h3>
+  <p class="small">Send your request — the form uses **Netlify Forms** (works without an extra server).</p>
+<div id="form-success" class="form-success" style="display:none;">
+        <strong>Danke!</strong> Ihre Nachricht wurde erfolgreich gesendet. Wir melden uns so schnell wie möglich.
+      </div>
+      <div id="form-error" class="form-error" style="display:none;">
+        <strong>Hinweis:</strong> Das Senden hat leider nicht funktioniert. Bitte versuchen Sie es erneut oder schreiben Sie uns direkt an <a href="mailto:info@vertexstrategic.org">info@vertexstrategic.org</a>.
+      </div>
+
+
+  <form class="form" name="project-request" method="POST" data-netlify="true">
+        <input type="hidden" name="bot-field" />
+    <input type="hidden" name="form-name" value="project-request">
+    <div class="form-row">
+      <div>
+        <label>Name</label>
+        <input name="name" required>
+      </div>
+      <div>
+        <label>Company (optional)</label>
+        <input name="company">
+      </div>
+    </div>
+    <div class="form-row">
+      <div>
+        <label>Email</label>
+        <input type="email" name="email" required>
+      </div>
+      <div>
+        <label>Phone (optional)</label>
+        <input name="phone">
+      </div>
+    </div>
+    <div>
+      <label>Message</label>
+      <textarea name="message" required></textarea>
+    </div>
+    <button class="btn primary" type="submit">Send</button>
+    <p class="small">Note: After deploy, submissions appear in Netlify → Forms.</p>
+  </form>
+</div>
+
+    
+<div class="card panel">
+  <h3>Direct contact</h3>
+  <p class="small">
+    <strong>VERTEX Strategic Projects SH.P.K</strong><br>
+    Rruga Salih Çekaj 26, Top 39<br>
+    51000 Deçan, Kosovo<br><br>
+    <strong>Phone / WhatsApp:</strong> <a href="tel:+38348760504">+383 48 760 504</a><br>
+    <strong>Email:</strong> Email: <a href="mailto:info@vertexstrategic.org">info@vertexstrategic.org</a> • <a href="mailto:office@vertexstrategic.org">office@vertexstrategic.org</a>
+  </p>
+</div>
+
+  </div>
+  <div class="footer">
+    <div>© 2026 VERTEX Strategic Projects SH.P.K</div>
+    <div><a href="services_en.html">Services</a> • <a href="impressum_en.html">Imprint</a></div>
+  </div>
+</div>
+
+
+<footer class="footer">
+  <div class="footer-links">
+    <a href="impressum-en.html">Imprint</a> ·
+    <a href="privacy-en.html">Privacy</a> ·
+    <a href="terms-en.html">Terms</a>
+  </div>
+</footer>
+
+
+<script>
+(function vspFormStatus(){
+  try{
+    var params = new URLSearchParams(window.location.search);
+    if(params.get('success') === '1'){
+      var s=document.getElementById('form-success');
+      var f=document.querySelector('form[data-netlify="true"]');
+      if(s){s.style.display='block';}
+      if(f){f.style.display='none';}
+      // clean URL (remove query) without reload
+      if(window.history && window.history.replaceState){
+        var clean = window.location.pathname;
+        window.history.replaceState({}, document.title, clean);
+      }
+    }
+  }catch(e){}
+})();
+</script>
+
+</body>
+</html>
